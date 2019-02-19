@@ -47,7 +47,7 @@
   </profile>
 
   <profile>
-   <id>codecover</id>
+   <id>code</id>
    <build>
     <plugins>	   
   <plugin>
