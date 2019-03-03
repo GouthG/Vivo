@@ -17,7 +17,7 @@
   </dependencies>
 <profiles>
 <profile>
-<id>test</id>
+<id>build</id>
 <build>
  <plugins>
   <plugin>
@@ -31,9 +31,12 @@
 <goal>exec</goal>
 </goals>
 <configuration>
-       <executable>git</executable>
+       <executable>docker</executable>
          <arguments>
-         <argument>--version</argument>
+         <argument>build</argument>
+         <argument>-t</argument>
+         <argument>jboss:$BUILD_ID</argument>
+         <argument>.</argument>
       </arguments>
     </configuration>
 </execution>
@@ -45,7 +48,7 @@
    
 
 <profile>
-<id>comp</id>
+<id>codecover</id>
 <build>
  <plugins>
   <plugin>
