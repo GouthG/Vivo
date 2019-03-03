@@ -35,7 +35,7 @@
          <arguments>
          <argument>build</argument>
          <argument>-t</argument>
-         <argument>jboss:$BUILD_ID</argument>
+         <argument>jboss</argument>
          <argument>.</argument>
       </arguments>
     </configuration>
